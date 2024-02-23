@@ -4,3 +4,22 @@
 
 const numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]    
 
+
+function arreyy(arr) {
+    let a=Math.round(arr.length/2);
+    for (let i = a; i < arr.length; i++) {
+        console.log(i);
+    }
+}
+
+arreyy(numArr);
+
+
+
+// 5
+// 6
+// 7
+// 8
+// 9
+
+
