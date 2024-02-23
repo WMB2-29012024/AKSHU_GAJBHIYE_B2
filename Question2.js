@@ -7,3 +7,13 @@ const strArr = ["asd", "qwe", "ert", "asdasdzxczxc"]
 const mixArr = ["first", "234_45", {first: "Web", last: "Masters"}, true]
     
 
+
+function arreyy(arr) {
+    for (let i = arr.length; i >= 0; i--) {
+        console.log(arr[i]);
+    }
+}
+
+arreyy(numArr)
+arreyy(strArr)
+arreyy(mixArr)
