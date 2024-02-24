@@ -5,3 +5,15 @@
 
 const numArr = [10, 2, 30, 4, 50];
 
+function largestNum(arr) {
+    let largeNumber=arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]>largeNumber) {
+            largeNumber=arr[i];
+        }
+    }
+    return largeNumber;
+}
+
+console.log(largestNum(numArr));
+
