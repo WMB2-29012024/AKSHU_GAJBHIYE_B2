@@ -17,3 +17,5 @@ function largestNum(arr) {
 
 console.log(largestNum(numArr));
 
+
+// Result 50
