@@ -13,7 +13,7 @@ function arrreyy(abc) {
     }
     return a;
 }
-
+ 
 console.log(arrreyy(arr));
 
 //Result middle number is 6;
