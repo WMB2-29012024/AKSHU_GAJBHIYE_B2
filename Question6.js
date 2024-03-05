@@ -3,4 +3,8 @@
 /* Question 6: Check and log if the number 5 is finite using the .isFinite() method.
 */
 
+let number=5;
 
+let a=isFinite(number);
+
+console.log(a);
