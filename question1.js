@@ -31,7 +31,5 @@ function Arrayyy(num) {
     }
     return [sumIndex, sum];
 }
-
-
 console.log(Arrayyy(nums));
 
