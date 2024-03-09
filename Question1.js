@@ -1,5 +1,5 @@
 // Branch Name: B2_W6_D3
-      
+
 /* Question 1: Given an array of objects representing students, each with name and age properties, write a function to filter out students who are teenagers (age between 13 and 19) and whose names contain the letter 'a', but only if their names are not more than 6 characters long. Implement the solution using the filter method of arrays.
 */
 
@@ -18,3 +18,12 @@ const students = [
   { name: "Jacob", age: 18 }
 ];
 
+
+function FilterStudent(student) {
+  let studentss = student.filter((std) => {
+    return std.age >= 13 && std.age <= 19 && (std.name.includes('a') && std.name.length <= 6);
+  })
+  return studentss;
+}
+
+console.log(FilterStudent(students));
