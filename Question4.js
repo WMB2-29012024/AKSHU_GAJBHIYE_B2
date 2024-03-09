@@ -1,5 +1,5 @@
 // Branch Name: B2_W6_D3
-      
+
 /* Question 4: Suppose you have an array of objects representing students, each with name and grades properties. Write a function which takes name as parameter, finds it in the array, using the find method. If the name is found, check if the students has passed all the exams using every method, where passing is defined as having grades greater than or equal to 60 in all subjects. Then, finally return a new array having percentage of each grade out of 150 total marks in each subject, using map method.
 Note: the percentages in the final array should not have more than 2 digits after decimal. And they must have the '%' sign appended.
 */
@@ -13,6 +13,27 @@ const students = [
     { name: "David", grades: [85, 90, 95] },
     { name: "Ella", grades: [60, 55, 70] }
 ];
+
+// function findStudentandCalculate(name) {
+//     function ArrayyyGraad(grade) {
+//         let sumgrade = grade.reduce((a, b) => a + b, 0);
+//         let prasent = (sumgrade / (grade.length * 150)) * 100;
+//         return prasent.toFixed(2) + "%";
+//     }
+//     const sturndentdata = students.find((student) => student.name === name);
+//     if (sturndentdata) {
+//         const passedAllExam = sturndentdata.grades.every((grad) => grad >= 60);
+//         if (passedAllExam) {
+//             return sturndentdata.grades.map((grad) => ArrayyyGraad(grad));
+//         } else {
+//             return 'Fail ho gaya mc';
+//         }
+//     } else {
+//         return 'mill nhi raha mc';
+//     }
+// }
+
+console.log(findStudentandCalculate('David'));
 
 // Output:
 // [56.67%, 60%, 63.34%]
