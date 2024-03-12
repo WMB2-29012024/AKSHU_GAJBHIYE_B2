@@ -63,10 +63,24 @@ const isValidParanthesis = (s) => {
         if (currentChar == '[' || currentChar == '{' || currentChar == '(') {
             stack.stackPush(currentChar);
         } else {
-            const peekElement = stack.peek();
-            if (!stack.isEmpty() && ((currentChar === ']' && peekElement == '[') || (currentChar === '}' || peekElement == '{') && (currentChar === '(' || peekElement === ')'))) {
-                stack.stackPop();
-            } else {
+            const peekEleent = stack.peek();
+            if (!stack.isEmpty()) {
+                let isValid = false;
+                switch (currentChar) {
+                    case ')':
+                        isValid = peekEleent === '(';
+                        break;
+                    case ']': isValid=peekEleent==='[';
+                        break;
+                    case '}' : isValid=peekEleent==='{';
+                        break;
+                }
+                if (isValid) {
+                    stack.stackPop();
+                }else{
+                    return false;
+                }
+            }else{
                 return false;
             }
         }
