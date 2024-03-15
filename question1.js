@@ -85,7 +85,7 @@ class ZigzagIterator {
         return this.queue.dequeue();
     }
     hasNext() {
-        return this.queue.isEmpty();
+        return !this.queue.isEmpty();
     }
 }
 
@@ -95,7 +95,7 @@ let v2 = [3, 4, 5, 6]
 
 let i=new ZigzagIterator(v1,v2);
 
-console.log(i.next());
+console.log(i.hasNext());
 console.log(i.next());
 console.log(i.next());
 console.log(i.next());
