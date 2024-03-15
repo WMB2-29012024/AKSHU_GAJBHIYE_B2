@@ -90,9 +90,6 @@ class ZigzagIterator {
 }
 
 
-
-
-
 let v1 = [1, 2]
 let v2 = [3, 4, 5, 6]
 
