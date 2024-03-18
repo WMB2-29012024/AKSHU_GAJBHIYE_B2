@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Hello world</h1>
+
+    <div class="upper-box">
+    <input type="search" id="search-box" placeholder="Search" />
+    <div class="filter-btn">
+        <button id="all-todo-btn" class="btn">All</button>
+        <button id="active-todo-btn" class="btn">Active</button>
+        <button id="completed-todo-btn" class="btn">Completed</button>
+    </div>
+    <div class="lol">
+    <div id="list-parent">
+        <ol id="items-list"></ol>
+    </div>
+</div>
+
+    </div>
+
+    <div class="botBox">
+        <div class="botbox1">
+            <form>
+                <input id="form-input" placeholder="Type something..." value="" />
+                <div class="timedate">
+                    <input type="date" class="date">
+                    <input type="time" class="date">
+                </div>
+                <button id="form-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
+
 </html>
