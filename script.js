@@ -9,6 +9,7 @@ const pageNoText = document.getElementById('para')
 let currentPage = 1;
 let dataLimit = 20;
 let filttter = [];
+const Url='https://jsonplaceholder.typicode.com/photos';
 
 function getpageinated(data) {
     const startIndex = (currentPage - 1) * dataLimit;
@@ -19,7 +20,7 @@ function getpageinated(data) {
 
 previousButton.addEventListener('click', () => {
 
-    const currentData=filttter.length?filttter:userData;
+    const currentData = filttter.length ? filttter : userData;
 
     currentPage = currentPage > 1 ? currentPage - 1 : 1;
     pageNoText.innerText = currentPage;
@@ -27,10 +28,10 @@ previousButton.addEventListener('click', () => {
 })
 
 nextbutton.addEventListener('click', () => {
-    const currentData=filttter.length?filttter:userData;
+    const currentData = filttter.length ? filttter : userData;
 
-    const totalPages = Math.ceil(currentData.length/dataLimit);
-    currentPage = currentPage<totalPages ? currentPage + 1 : totalPages;
+    const totalPages = Math.ceil(currentData.length / dataLimit);
+    currentPage = currentPage < totalPages ? currentPage + 1 : totalPages;
     pageNoText.innerText = currentPage;
     createTableBody(getpageinated(currentData));
 })
@@ -88,6 +89,27 @@ function createTableBody(tableData) {
 
 
 pageNoText.innerText = currentPage;
-createTableHeader(userData);
-createTableBody(getpageinated(userData));
+// createTableHeader(userData);
+// createTableBody(getpageinated(userData));
 // console.log(getpageinated(userData));
+
+// const FetchTableData= async()=> {
+//     console.log("Data Fetched");
+//     // fetch(Url).then((res)=>res.json()).then((r)=>console.log(r));
+//     const response=await fetch(Url);
+//     const data=await response.json();
+//     return data;
+// }
+
+
+// FetchTableData().then((data)=>{
+//     createTableHeader(data);
+// createTableBody(getpageinated(data));
+// }).catch((error)=>console.log(error))
+
+fetch(Url).then(response=>response.json()).then((data)=>{
+    createTableHeader(data);
+    createTableBody(getpageinated(data));
+})
+
+
