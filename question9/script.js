@@ -11,7 +11,7 @@ async function displayData() {
         const data = await response.json();
         console.log(data);
         const listItem = document.createElement('li');
-        listItem.innerHTML = `Title : ${data.title} ${todoId}`;
+        listItem.innerHTML = `Title : ${data.title}`;
         ul.appendChild(listItem);
     } catch (error) {
         console.log('no data to fetch');
