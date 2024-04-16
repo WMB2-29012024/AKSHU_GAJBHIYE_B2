@@ -7,6 +7,8 @@ let PostId = 1;
 let countTimer;
 
 btn.addEventListener('click', () => {
+
+    
     PostId++;
     clearTimeout(countTimer);
     countTimer = setTimeout(() => {
