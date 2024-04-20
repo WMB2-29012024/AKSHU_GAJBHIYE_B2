@@ -21,22 +21,42 @@
                     <img src="https://images.unsplash.com/photo-1713279507772-07aa1942a343?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
                         alt="" id="banner">
                 </div>
-                <div class="circle">
+                <div class="circle " id="circlee">
                     <img src="https://media.licdn.com/dms/image/D4E03AQHxAc0EP4XN9w/profile-displayphoto-shrink_800_800/0/1712659232981?e=1718841600&v=beta&t=Rn3PXUyjSkNS-TmJ5E6oyvLRiXYApEWKbguUjBjdbaY"
-                        alt="">
+                        alt="" id="pic">
                 </div>
-
-
-
-
             </div>
 
             <div class="right-box"></div>
         </div>
 
 
-        <div class="popup"></div>
+        <div class="popup">
+            <div class="opt">
+                <div class="popcam switch-on-camera-btn">
+                    <img src="https://t4.ftcdn.net/jpg/04/96/47/13/240_F_496471319_DbtjoUvKqyy2e9OfgBnK5mm2AXhKpa9m.jpg"
+                        alt="">
+                </div>
 
+
+                <div class="popgal">
+                    <input type="file" hidden accept="image/*" id="avatar">
+                    <label for="avatar">
+                        <img src="https://t3.ftcdn.net/jpg/04/34/74/22/240_F_434742298_IM79PaxW0VAcemqmXXjkIAd2pd3cYkzh.jpg"
+                            alt="">
+                    </label>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="camera-option">
+            
+        <video id="video-preview" autoplay></video>
+        <button id="capture-btn" style="display: none;">Take Selfie</button>
+        <canvas id="canvas-preview" style="display: none;"></canvas>
+
+        </div>
 
     </div>
 
