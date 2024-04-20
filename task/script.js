@@ -1,4 +1,4 @@
-const hum = document.querySelector('.hum');
+const hum = document.querySelector('.humburger');
 const slider=document.querySelector('.sidebar');
 let flag = 0;
 hum.addEventListener('click', () => {
@@ -12,4 +12,3 @@ hum.addEventListener('click', () => {
         slider.style.left='-250px'
     }
 })
-

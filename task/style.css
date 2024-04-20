@@ -79,7 +79,7 @@ header {
   color: #fff;
 }
 
-.hum {
+.humburger {
   display: none;
 }
 
@@ -89,7 +89,7 @@ header {
     display: none;
   }
 
-  .hum {
+  .humburger {
     display: block;
   }
 
