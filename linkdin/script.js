@@ -69,9 +69,9 @@ function accessCamera() {
                 videoElement.srcObject = stream;
                 videoElement.style.display = "block";
                 captureButton.style.display = "block";
-                cameraOption.style.display='block'
+                cameraOption.style.display = 'block'
                 isCameraOn = true;
-                
+
                 switchOnCameraButton.innerHTML = `<img id="img" src="https://t4.ftcdn.net/jpg/04/96/47/13/240_F_496471319_DbtjoUvKqyy2e9OfgBnK5mm2AXhKpa9m.jpg" alt="">`;
                 // captureButton.style.display = 'none';
             })
@@ -85,7 +85,7 @@ function accessCamera() {
         videoElement.srcObject = null;
         videoElement.style.display = "none";
         captureButton.style.display = "none";
-        
+
         isCameraOn = false;
         popup.style.display = 'none';
         switchOnCameraButton.innerHTML = `<img id="img" src="https://t4.ftcdn.net/jpg/04/96/47/13/240_F_496471319_DbtjoUvKqyy2e9OfgBnK5mm2AXhKpa9m.jpg" alt="">`;
@@ -114,20 +114,32 @@ captureButton.addEventListener("click", function () {
     stream.getTracks().forEach((track) => {
         track.stop();
     });
-    cameraOption.style.display='none';
-    popup.style.display='none';
+    cameraOption.style.display = 'none';
+    popup.style.display = 'none';
     isCameraOn = true;
     const imageDataUrl = canvasElement.toDataURL("image/png");
     console.log(imageDataUrl);
     box.innerHTML = `<img src="${imageDataUrl}"
     alt="" id="pic">`;
-    
+
     videoElement.style.display = "none";
 
     // Show input field for image name
     imageNameInput.style.display = "block";
-    
+
 });
 
+
+let location = document.querySelector('#location').addEventListener('click', getLocation)
+
+async function getLocation() {
+    if ("geolocation" in getLocation) {
+        await navigator.geolocation.getCurrentPosition((position) => {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            location.innerHTML = `latitude ${latitude} / longitude ${longitude} `
+        })
+    }
+}
 
 

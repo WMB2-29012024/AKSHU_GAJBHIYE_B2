@@ -17,7 +17,6 @@ nav {
 }
 
 .content {
-  /* border: 2px solid pink; */
   > .content-container {
     height: 50px;
     /* border: 2px solid purple; */
@@ -34,7 +33,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: end;
-  /* background-color: blue; */
 }
 .left-box img {
   width: 100%;
@@ -87,6 +85,7 @@ nav {
   transform: translate(-50%, -50%);
   display: none;
   transition: 0.2s;
+  border: 2px solid black;
 }
 
 .opt {
@@ -181,11 +180,51 @@ nav {
 .camera-option {
   width: 500px;
   height: 500px;
-  background-color: green;
+  /* background-color: green; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
   z-index: 999;
+}
+
+#bio-btn {
+  padding: 10px 20px;
+  border: 2px dotted blue;
+  border-radius: 30px;
+}
+.bio{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bio-left{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 10px;
+}
+.bio-left:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#priyam {
+  height: 25px;
+}
+
+.bio-box{
+  width: 53%;
+  height: 60px;
+}
+
+#biocon{
+  color: #007bff;
+}
+#bio-conect{
+  color: #007bff;
+  margin-top: 14px;
 }
