@@ -130,16 +130,6 @@ captureButton.addEventListener("click", function () {
 });
 
 
-let location = document.querySelector('#location').addEventListener('click', getLocation)
 
-async function getLocation() {
-    if ("geolocation" in getLocation) {
-        await navigator.geolocation.getCurrentPosition((position) => {
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-            location.innerHTML = `latitude ${latitude} / longitude ${longitude} `
-        })
-    }
-}
 
 
