@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+#main {
+  width: 100%;
+  height: max-content;
+  background-color: whitesmoke;
+}
+
+nav {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+
+.logo {
+  width: 121px;
+  height: 29px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+  }
+}
+
+.nav-icon {
+  display: flex;
+  gap: 30px;
+  margin-left: 40px;
+}
+
+.person {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.contact-box {
+  width: 100%;
+  height: 10vw;
+  /* background-color: grey; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Poppins;
+}
+
+.contact-box h4 {
+  color: gray;
+}
+
+.form-box {
+  width: 100%;
+  height: 647px;
+  /* background-color: lightcyan; */
+  padding: 0px 122px;
+}
+
+.form-box-inner {
+  width: 100%;
+  height: 647px;
+  background-color: white;
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 10px 20px;
+}
+
+.left-form {
+  position: relative;
+  width: 30rem;
+  height: 647px;
+  background-color: black;
+  overflow: hidden;
+  color: white;
+  padding: 40px 160px 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.left-form-h4 {
+  color: grey;
+  font-size: 13px;
+}
+
+.left-form-h2 {
+  font-size: 25px;
+}
+
+.left-box1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-box2 {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+  gap: 50px;
+  /* background-color: red; */
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.left-box3 {
+  width: 100%;
+  height: 40px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+}
+
+.elip1 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.elip2 {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+}
+
+.box1 {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: grey;
+}
+
+.right-form {
+  width: 60%;
+  height: 100%;
+}
+
+.right-box {
+  padding: 30px 20px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.right-box-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.right-box-input input {
+  border: none;
+  padding: 5px 12px;
+  border-bottom: 1px solid gray;
+}
+
+.right-selectbox {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.right-h4 {
+  font-weight: 600;
+}
+
+.right-bullet {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-submit {
+  width: 100%;
+  height: 12rem;
+  padding: 10px 40px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.textarea {
+  padding: 20px 30px;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.textarea::placeholder {
+  font-size: 1rem;
+}
+
+.btn {
+  width: 11rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.upperbtn {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.right-bottom {
+  width: 100%;
+  height: 8.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right-bottom img {
+  margin-left: 5rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  width: 100%;
+  height: 23rem;
+  background-color: black;
+}
