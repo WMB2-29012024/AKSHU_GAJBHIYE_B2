@@ -1,0 +1,22 @@
+@media (max-width: 800px) {
+
+    #main{
+        width: 100%;
+    }
+
+    nav{
+        padding: 5px 10px;
+        width: 100vw;
+        
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .hamburgur{
+        display: block;
+    }
+
+
+}
