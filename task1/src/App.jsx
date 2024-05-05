@@ -1,5 +1,5 @@
 import React from "react";
-import Task from "./Tasks/TasksSeven/Task";
+import Task from "./Tasks/TaskTwel/Task";
 
 const App = () => {
   return (
