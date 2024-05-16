@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: lightgreen;
+  background-color: white;
+}
+.logo{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
