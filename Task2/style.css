@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+.input-box {
+  width: 80%;
+  height: max-content;
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input-left {
+  width: 48%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.input-right {
+  height: 6rem;
+  width: 50%;
+  background-color: red;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.btn{
+  padding: 15px 40px;
+  margin-left: 1rem;
+  background-color: orangered;
+  border: none;
+  color: white;
+}
+
+
+@media (max-width: 780px) {
+  .input-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .input-left {
+    width: 100%;
+  }
+  .input-right {
+    width: 100%;
+  }
+}
