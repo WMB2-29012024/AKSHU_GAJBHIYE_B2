@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.box {
+  width: 360px;
+  height: 218px;
+  background-color: #7949ff;
+  border-radius: 1rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+  padding: 16px 20px;
+  flex-direction: column;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 14px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+.box-inner {
+  height: max-content;
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+}
+
+.box-inner-cir {
+  width: 3rem;
+  height: 3rem;
+  background-color: pink;
+  border-radius: 100px;
+}
+
+.cart-h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+
+.cart-h4:nth-child(3) {
+  width: max-content;
+  height: max-content;
+  background-color: whitesmoke;
+  border-radius: .4rem;
+  padding: 7px 15px;
+  color: #7949ff;
+}
+
+.cart-con{
+  margin: 10px 0px;
+}
