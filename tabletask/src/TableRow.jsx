@@ -14,6 +14,7 @@ const TableRow = ({ data }) => {
       <th>phone</th>
       <th>website</th>
       <th>company</th>
+      <th>Actions</th>
     </tr>
   );
 };

@@ -3,7 +3,7 @@ import HeaderEntri from "./HeaderEntri";
 import SearchInput from "./SearchInput";
 import HeaderBtn from "./HeaderBtn";
 
-const Header = () => {
+const Header = ({ data, setData }) => {
   return (
     <div
       style={{
@@ -16,7 +16,7 @@ const Header = () => {
     >
       <div style={{ display: "flex", gap: "1rem" }}>
         <HeaderEntri />
-        <SearchInput />
+        <SearchInput ddata={data} setdata={setData} />
       </div>
       <HeaderBtn />
     </div>

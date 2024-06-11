@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
-const SearchInput = () => {
+const SearchInput = ({ setdata, ddata }) => {
   return (
     <div>
-      <input type="text" className="header-input" placeholder="Search..." />
+      <input type="text" className="header-input" />
     </div>
   );
 };
